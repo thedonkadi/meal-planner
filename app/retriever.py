@@ -37,7 +37,7 @@ class RecipeRetriever:
 
         return set(word for word in words if word not in stop_words)
 
-    def search(self, query, top_k=5):
+    def search(self, query, top_k=3):
 
         user_ingredients = [
             ing.strip().lower()
